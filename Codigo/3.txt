@@ -1,0 +1,38 @@
+CREATE TABLE almacenes (codigo INT NOT NULL AUTO-INCREMENT,
+             PRIMARY KEY(codigo),
+             Lugar NVARCHAR(100),
+             Capacidad INT
+);
+
+CREATE TABLE cajas (num_referencia CHAR(5),
+             PRIMARY KEY(num_referencia),
+             Contenido NVARCHAR(100),
+             Valor INT,
+             Codigo_almacen INT
+             FOREIGN KEY Codigo_almacen (Codigo_almacen) REFERENCES cajas(Codigo_almacen)
+);
+
+INSERT INTO almacenes(lugar,capacidad) VALUES ('Caseros','1000');
+INSERT INTO almacenes(lugar,capacidad) VALUES ('Ciudadela','2500');
+
+INSER INTO cajas (num_referencia,contenido,valor,codigo_almacen) VALUES ('43059','Galletitas','10000',1);
+INSER INTO cajas (num_referencia,contenido,valor,codigo_almacen) VALUES ('44059','Galletitas','25000',2);
+
+SELECT Lugar FROM almacenes WHERE Lugar LIKE 'Caseros' AND 'Ciudadela';
+SELECT Valor FROM cajas WHERE precio>150
+
+5- ¡SELECT Contenido FROM cajas
+
+SELECT AVG(valor) as valormedio FROM cajas
+SELECT AVG(valor) as valormedio FROM cajas ORDER BY Codigo_almacen;
+
+SELECT numreferencia FROM cajas WHERE Lugar IN (SELECT lugar FROM almacenes);
+9-
+SELECT codigo FROM almacenes WHERE capacidad>1000;
+SELECT numreferencia FROM cajas WHERE Lugar IN (SELECT lugar FROM almacenes WHERE lugar='Ciudadela');
+
+INSERT INTO almacenes(lugar,capacidad) VALUES ('Barcelona','3');
+SELECT * FROM cajas ORDER BY DESC
+SELECT numreferencia FROM cajas WHERE max(valor) as valormaximo;
+SELECT valor FROM cajas WHERE valor BETWEEN 150 AND 500 WHERE Lugar IN(SELECT lugar FROM almacenes WHERE lugar='Ramos Mejia');
+SELECT valor FROM cajas WHERE valor>500 WHERE lugar IN(SELECT lugar FROM almacenes WHERE lugar=('Lujan' or 'Ciudadela'));
