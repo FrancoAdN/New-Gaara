@@ -1,0 +1,14 @@
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.csprojAssemblyReference.cache
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.csproj.CoreCompileInputs.cache
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorAssemblyInfo.cache
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorAssemblyInfo.cs
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.AssemblyInfoInputs.cache
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.AssemblyInfo.cs
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.deps.json
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.runtimeconfig.json
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.runtimeconfig.dev.json
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.dll
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorTargetAssemblyInfo.cache
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.pdb
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.dll
+C:\Users\7ºTecnica\Desktop\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.pdb
