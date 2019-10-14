@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using API_Gaara.Models;
 
-namespace API_Gaara.Service
+namespace API_Gaara.Services
 {
     public class BookService
     {
@@ -12,7 +12,7 @@ namespace API_Gaara.Service
         public BookService(IBookstoreDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
-            var database = client.GetDatabase(settings.DatabaseName);
+            var database = client.GetDatabase(settings.DatabaseNameBk);
 
             _books = database.GetCollection<Book>(settings.BooksCollectionName);
         }

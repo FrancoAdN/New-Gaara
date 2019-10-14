@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using API_Gaara.Models;
-using API_Gaara.Service;
+using API_Gaara.Services;
 
 namespace API_Gaara
 {
@@ -33,6 +33,15 @@ namespace API_Gaara
 
             services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
+
+            services.Configure<UsersDatabaseSettings>(
+                Configuration.GetSection(nameof(UsersDatabaseSettings)));
+
+            services.AddSingleton<IUsersDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<UsersDatabaseSettings>>().Value);
+
+
+            services.AddSingleton<UserService>();
 
             services.AddSingleton<BookService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

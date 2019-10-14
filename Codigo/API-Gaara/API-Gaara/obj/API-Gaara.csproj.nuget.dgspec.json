@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\7ºTecnica\\Desktop\\API-Gaara\\API-Gaara\\API-Gaara.csproj": {}
+    "C:\\Users\\Franco\\Desktop\\New-Gaara\\Codigo\\API-Gaara\\API-Gaara\\API-Gaara.csproj": {}
   },
   "projects": {
-    "C:\\Users\\7ºTecnica\\Desktop\\API-Gaara\\API-Gaara\\API-Gaara.csproj": {
+    "C:\\Users\\Franco\\Desktop\\New-Gaara\\Codigo\\API-Gaara\\API-Gaara\\API-Gaara.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\7ºTecnica\\Desktop\\API-Gaara\\API-Gaara\\API-Gaara.csproj",
+        "projectUniqueName": "C:\\Users\\Franco\\Desktop\\New-Gaara\\Codigo\\API-Gaara\\API-Gaara\\API-Gaara.csproj",
         "projectName": "API-Gaara",
-        "projectPath": "C:\\Users\\7ºTecnica\\Desktop\\API-Gaara\\API-Gaara\\API-Gaara.csproj",
-        "packagesPath": "C:\\Users\\7ºTecnica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\7ºTecnica\\Desktop\\API-Gaara\\API-Gaara\\obj\\",
+        "projectPath": "C:\\Users\\Franco\\Desktop\\New-Gaara\\Codigo\\API-Gaara\\API-Gaara\\API-Gaara.csproj",
+        "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franco\\Desktop\\New-Gaara\\Codigo\\API-Gaara\\API-Gaara\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\7ºTecnica\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Franco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,16 +58,26 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.9.2, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,5 +1,5 @@
 ﻿using API_Gaara.Models;
-using API_Gaara.Service;
+using API_Gaara.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
