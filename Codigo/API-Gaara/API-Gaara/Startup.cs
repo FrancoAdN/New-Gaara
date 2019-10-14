@@ -40,8 +40,14 @@ namespace API_Gaara
             services.AddSingleton<IUsersDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<UsersDatabaseSettings>>().Value);
 
+            services.Configure<EnterprisesDatabaseSettings>(
+                Configuration.GetSection(nameof(EnterprisesDatabaseSettings)));
+
+            services.AddSingleton<IEnterprisesDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<EnterprisesDatabaseSettings>>().Value);
 
             services.AddSingleton<UserService>();
+            services.AddSingleton<EnterpriseService>();
 
             services.AddSingleton<BookService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

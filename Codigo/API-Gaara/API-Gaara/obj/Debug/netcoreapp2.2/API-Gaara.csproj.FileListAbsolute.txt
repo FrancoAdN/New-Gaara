@@ -20,7 +20,6 @@ C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\bin\Debug\netcoreap
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.runtimeconfig.dev.json
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.dll
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\bin\Debug\netcoreapp2.2\API-Gaara.pdb
-C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.csprojAssemblyReference.cache
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorAssemblyInfo.cache
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorAssemblyInfo.cs
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.AssemblyInfoInputs.cache
@@ -28,3 +27,4 @@ C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreap
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.RazorTargetAssemblyInfo.cache
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.dll
 C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.pdb
+C:\Users\Franco\Desktop\New-Gaara\Codigo\API-Gaara\API-Gaara\obj\Debug\netcoreapp2.2\API-Gaara.csprojAssemblyReference.cache
