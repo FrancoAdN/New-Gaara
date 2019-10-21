@@ -1,0 +1,24 @@
+5da2a46f37c072e084e8da0a
+
+5da2a46f37c072e084e8da0f
+
+ent = 5da4a7447b15ffd6e19bd2b9
+
+db.Enterprises.aggregate(
+	{$unwind: "$groups"},
+	{$match: {"groups.users": "5da2a46f37c072e084e8da0f"}}, 
+	{$project: {_id:false, id:"$groups.id", name: "$groups.name"}}
+).pretty()
+
+
+db.Enterprises.aggregate(
+	{$unwind: "$proyectos"},
+	{$match: {"proyectos.tasks.group":{ $in: [5, 4]}}},
+	{$project: {_id:false, id:"$proyectos.id", name: "$proyectos.name"}}
+).pretty()
+
+
+db.Enterprises.find(
+	{_id: ObjectId("5da4a7447b15ffd6e19bd2b9")},
+	{_id:false, proyectos: {$elemMatch:{id: 4}}}
+).pretty()
