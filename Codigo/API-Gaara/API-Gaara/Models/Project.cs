@@ -12,20 +12,21 @@ namespace API_Gaara.Models
     [BsonIgnoreExtraElements]
     public class Project
     {
-        [DataMember]
+        [BsonElement("state")]
+        public int state { get; set; }
+
+        [BsonElement("name")]
+        public string name { get; set; }
+        [BsonElement("desc")]
+        public string desc { get; set; }
+        
+        [BsonElement("start")]
+        public string start { get; set; }
+        [BsonElement("end")]
+        public string end { get; set; }
         [BsonElement("id")]
         public int id { get; set; }
-
-        public string name { get; set; }
-
-        public string desc { get; set; }
-
-        public int state { get; set; }
-        
-        public string start { get; set; }
-        
-        public string end { get; set; }
-        
+        [BsonElement("tasks")]
         public List<Task> tasks { get; set; }
     }
 }

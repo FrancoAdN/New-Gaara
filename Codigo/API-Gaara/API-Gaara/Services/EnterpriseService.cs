@@ -12,6 +12,7 @@ namespace API_Gaara.Services
     public class EnterpriseService
     {
         private readonly IMongoCollection<Enterprise> _enterprise;
+        private readonly IMongoCollection<Project> _project;
 
         public EnterpriseService(IEnterprisesDatabaseSettings settings)
         {
@@ -19,6 +20,7 @@ namespace API_Gaara.Services
             var database = client.GetDatabase(settings.DatabaseName);
 
             _enterprise = database.GetCollection<Enterprise>(settings.EnterprisesCollectionName);
+            _project = database.GetCollection<Project>(settings.EnterprisesCollectionName);
         }
 
         public List<Enterprise> Get() =>
@@ -52,16 +54,20 @@ namespace API_Gaara.Services
                 .ToList();
         }
 
-        public List<Project> GetProject(string ent, int id)
+        public Project GetProject(string ent, int id)
         {
-            var builder = Builders<BsonDocument>.Filter;
-            var filter = builder.Eq("_id", $"ObjectId({ent})");
-            var proj = new BsonDocument { { "_id", false }, {"proyectos", new BsonDocument ("$elemMatch", new BsonDocument("id", id))} };
-            //var find = _enterprise.Find(enterprise => enterprise.id == ent).Project<Project>(new BsonDocument { { "_id", false }, { "proyectos", new BsonDocument { { "$elemMatch", new BsonDocument { { "id", id } } } } } });
-            //return find;
-            return _enterprise.Find<Project>(enterprise => enterprise.id == ent).Project(proj);
-       
-            
+
+
+           
+            var find = _enterprise.Find(new BsonDocument { { "_id", ObjectId.Parse(ent) } })
+                .Project<BsonDocument>(new BsonDocument { { "_id", false }, { "proyectos",
+                        new BsonDocument { { "$elemMatch", new BsonDocument { { "id", id } } } } } })
+                .FirstOrDefault();
+
+            var proj = BsonSerializer.Deserialize<Project>(find);
+
+            return proj;
+
         }
 
         public Enterprise Get(string id)
